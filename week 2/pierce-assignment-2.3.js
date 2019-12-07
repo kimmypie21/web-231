@@ -9,6 +9,7 @@
 */
 
 const header = require('../pierce-header.js'); //import statement for header file
+console.log(header.display("Kimberly", "Pierce", "Week 2:Assignment 2.3"));
 
 //function properties
 myName.Kim = "Kimberly Pierce";
