@@ -9,7 +9,7 @@
 */
 
 const header = require('../pierce-header.js'); //import statement for header file
-console.log(header.display("Kimberly", "Pierce", "Assignment 3.3"));
+console.log(header.display("Kimberly", "Pierce", "Assignment 3.3") + " \n ");
 
 //Expected output: The enter key was pressed
 

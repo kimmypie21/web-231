@@ -9,7 +9,7 @@
 */
 
 const header = require('../pierce-header.js'); //import statement for header file
-console.log(header.display("Kimberly", "Pierce", "Assignment 3.2"));
+console.log(header.display("Kimberly", "Pierce", "Assignment 3.2") + " \n ");
 
 //define test variables for if/else loops
 var testVar1 = "Yes";

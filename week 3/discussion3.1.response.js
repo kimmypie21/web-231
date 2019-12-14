@@ -10,6 +10,9 @@
 
 */
 
+const header = require('../pierce-header.js'); //import statement for header file
+console.log(header.display("Kimberly", "Pierce", "Discussion 3.1") + " \n ");
+
 // Expected output “Your birth stone is Opal”
 
 //Start program
@@ -120,3 +123,50 @@ switch(birthMonth){
 
 
 //End program
+
+
+/*
+ 	============================================
+ 	; Title: control-statements.js
+ 	; Author: Diandra McKenzie
+  ; Date: 12 December 2019
+  ; Modified by: Kimberly Pierce
+ 	; Description: Control statement with two errors
+ 	;===========================================
+ 	*/
+
+ 	/*
+ 	 Expected output:
+
+ 	 Diandra McKenzie
+ 	 Exercise 2.3
+ 	 Today's Date
+
+ 	 Your child can register for Pre-k!
+ 	 Your child must be born in 2016 to register for Pre-k!
+ 	 Your child can register for Kindergarten!
+ 	 Please call the school.
+ 	*/
+
+
+ 	//Start Program
+
+
+ 	//variable
+ 	var x=2016
+
+
+ 	//if..else Statements
+
+ 	if(x === 2016) { //extra equal sign in this statement removed
+ 	console.log("Your child can register for Pre-k!")
+ 	} else if(x > 2016) {
+ 	console.log("Your child must be born in 2016 to register for Pre-k!")
+ 	} else if(x == 2015){
+ 	console.log("Your child can register for Kindergarten!")
+ 	} else{
+ 	console.log("Please call the school.")
+ 	} //removed the extra else/if statement that came after the final default else statement
+
+
+ 	//End Program
