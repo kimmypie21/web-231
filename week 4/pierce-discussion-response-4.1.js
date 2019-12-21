@@ -35,11 +35,11 @@ Kirk McKenzie would really love a BMW i8 for Christmas.
 
 //Variables
 
-var person = ["Kirk", "McKenzie", 42];
+var person = ["Kirk", "McKenzie", 42];//added "" around values
 var cars = ["Lamborghini Murcielago", "Cadillac Escalade", "BMW i8"];
 
 //Output
-console.log(person[0]+ " " +person[1] + " would really love a " + cars[2]+" for Christmas.");
+console.log(person[0]+ " " +person[1] + " would really love a " + cars[2]+" for Christmas.");//changed values being called to reflect 0 and 1 values in array KMP
 
 
 //End Program
@@ -59,7 +59,7 @@ console.log(" \n ");
 
 
 // Declare array Serenity
-var serenity = ['Mal', 'Wash', 'Jayne', 'Zoe', 'Inara', 'Bester'];//added comma between last two array parameters
+var serenity = ['Mal', 'Wash', 'Jayne', 'Zoe', 'Inara', 'Bester'];//added comma between last two array parameters KMP
 
 // Delete the sixth element, add four elements
 serenity.splice(5, 1, 'Kaylee', 'Book', 'Simon', 'River')

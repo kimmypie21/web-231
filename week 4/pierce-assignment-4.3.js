@@ -11,8 +11,10 @@
 const header = require('../pierce-header.js'); //import statement for header file
 console.log(header.display("Kimberly", "Pierce", "Assignment 4.3") + " \n ");
 
+//create array values
 var cars = ["Mustang", "Corolla", "Accord", "Impreza", "Prelude"];
 
+//create function to test array
 function getValue (arr, strng){
   for (var i=0; i< arr.length; i++){
     if (arr[i] === strng){
@@ -28,6 +30,7 @@ console.log("--Displaying Array Items");
 console.log(" ");
 console.log("--Selected Values--");
 
+//pass array through function and test parameter
 getValue(cars, "Mustang");
 getValue(cars, "Prelude");
 
