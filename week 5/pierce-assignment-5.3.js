@@ -11,6 +11,7 @@
 const header = require('../pierce-header.js'); //import statement for header file
 console.log(header.display("Kimberly", "Pierce", "Assignment 5.3") + " \n ");
 
+//create array with values
 var famousComposers = [
   {firstName:'Wolfgang Amadeus', lastName: 'Mozart,', genre: 'Classical,', rating: 1},
   {firstName:'Antonio', lastName: 'Vivaldi,', genre: 'Classical,', rating: 2},
@@ -19,6 +20,7 @@ var famousComposers = [
   {firstName:'Johannes', lastName: 'Brahms,', genre: 'Classical,', rating: 5},
 ]
 
+//use for.each to iterate array and return selected values
 famousComposers.forEach (function(composers){
   console.log(composers.lastName + ' ' + composers.genre + ' '+ composers.rating);
 })
