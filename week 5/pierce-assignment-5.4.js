@@ -20,43 +20,32 @@ var famousComposers = [
   {firstName:'Johannes', lastName: 'Brahms', genre: 'Classical', rating: 10},
 ]
 
-
+//filter array by rating
 var byRating = famousComposers.map(function(rating) {
   return "Rating:" + rating.rating  + " " + "Composer:" + rating.lastName
   });
-
+//output
 console.log("--Composers by Rating--")
 byRating.forEach(function(rating){
   console.log(rating);
 })
 
 console.log(" \n ");
+//filter array by genre
 console.log("--Composers by Genre--")
 var byGenre = famousComposers.map (function(genre){
    return "Genre:" + genre.genre + " " + "Composer:" + genre.lastName
   });
-
+//output
   byGenre.forEach(function(genre){
     console.log(genre)
   });
 
   console.log(" \n ");
 
-  console.log("--All Composers--")
+console.log("--All Composers--")
+//iterate over array with all values
 famousComposers.forEach (function(composers){
   console.log (composers.firstName + " "+ composers.lastName + " | "  + composers.genre + " | " + composers.rating);
 });
 
-/*
-let lastNames = famousPoets.map(function(poet) {
-  return poet.lastName + poet.firstName
-})
-
-// output
-
-
-lastNames.forEach(function(lastName) {
-  console.log(lastName)
-
-})
-*/
