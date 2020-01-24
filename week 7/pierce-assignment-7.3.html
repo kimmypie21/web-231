@@ -32,20 +32,23 @@ console.log(header.display("Kimberly", "Pierce", "Assignment 7.3") + " \n ");
 
   <script>document.write("Hello World!")</script>
 
-<div id="groceries"></div>
+  <!--create div for innerHTML script-->
+  <div id="groceries"></div>
 
-<script>
-  document.write(
-    "<h1>Grocery List<h1>",
-    "<ol>",
-    "<li>Pop Tarts</li>",
-    "<li>Peanut Butter</li>",
-    "<li> Waffles</li>",
-    "<li>Yogurt</li>",
-    "<li>Cheese</li>",
-    "</ol>")
-</script>
+  <!--document.write list-->
+  <script>
+    document.write(
+      "<h1>Grocery List<h1>",
+      "<ol>",
+      "<li>Pop Tarts</li>",
+      "<li>Peanut Butter</li>",
+      "<li> Waffles</li>",
+      "<li>Yogurt</li>",
+      "<li>Cheese</li>",
+      "</ol>")
+  </script>
 
+  <!--script for inner HTML div-->
   <script>
     document.querySelector("#groceries").innerHTML =
       "<h1>Grocery List</h1>"+
