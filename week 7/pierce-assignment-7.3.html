@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<!--
+============================================
+; Title: Assignment 7.3
+; Author: Kimberly Pierce/Professor Krasso
+; Date:   20 January 2020
+; Modified By: Kimberly Pierce
+; Description: Client Side JavaScript
+;===========================================
+const header = require('../pierce-header.js'); //import statement for header file
+console.log(header.display("Kimberly", "Pierce", "Assignment 7.3") + " \n ");
+-->
+
+
+<head>
+    <title>Assignment 7.3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body{
+          font-family: sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="../site.css">
+</head>
+
+
+<body>
+
+  <script>document.write("Hello World!")</script>
+
+<div id="groceries"></div>
+
+<script>
+  document.write(
+    "<h1>Grocery List<h1>",
+    "<ol>",
+    "<li>Pop Tarts</li>",
+    "<li>Peanut Butter</li>",
+    "<li> Waffles</li>",
+    "<li>Yogurt</li>",
+    "<li>Cheese</li>",
+    "</ol>")
+</script>
+
+  <script>
+    document.querySelector("#groceries").innerHTML =
+      "<h1>Grocery List</h1>"+
+      "<table>" +
+      "<thead>" +
+      "<tr>" +
+      "<th>List Item(s)</th>" +
+      "</tr>" +
+      "</thead>" +
+      "<tbody>" +
+      "<tr><td>Pop Tarts</td></tr>" +
+      "<tr><td>Peanut Butter</td></tr>" +
+      "<tr><td>Waffles</td></tr>" +
+      "<tr><td>Yogurt</td></tr>" +
+      "<tr><td>Cheese</td></tr>" +
+      "</tbody>" +
+    "</table>"
+
+  </script>
+
+
+
+</body>
+
+
+</html>
+
+
