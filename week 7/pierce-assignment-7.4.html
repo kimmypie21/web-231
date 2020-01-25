@@ -1,0 +1,98 @@
+<!--
+============================================
+; Title: Assignment 7.4
+; Author: Kimberly Pierce
+; Date:   20 January 2020
+; Modified By: Kimberly Pierce
+; Description: Inline JavaScript Functions
+;===========================================
+const header = require('../pierce-header.js'); //import statement for header file
+console.log(header.display("Kimberly", "Pierce", "Assignment 7.4") + " \n ");
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Assignment 7.4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="../site.css">
+</head>
+
+<body>
+  <!--HTML Table with 5 rows-->
+  <h1>Computer Components</h1>
+    <table>
+
+    <thead>
+      <tr>
+        <th>I.D</th>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Functions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Laptop</td>
+        <td>$1500.99</td>
+        <td>
+          <a href="javascript:alert('1');">Edit</a> | <!--Inline JavaScript to alert component I.D#-->
+          <a href="javascript:alert('Are You Sure?');">Delete</a> <!--Inline JavaScript to alert confirm message-->
+        </td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Motherboard</td>
+        <td>$35.70</td>
+        <td>
+          <a href="javascript:alert('2');">Edit</a> |
+          <a href="javascript:alert('Are You Sure?');">Delete</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Monitor</td>
+        <td>$174.90</td>
+        <td>
+          <a href="javascript:alert('3');">Edit</a> |
+          <a href="javascript:alert('Are You Sure?');">Delete</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Mouse</td>
+        <td>$13.99</td>
+        <td>
+          <a href="javascript:alert('4');">Edit</a> |
+          <a href="javascript:alert('Are You Sure?');">Delete</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Keyboard</td>
+        <td>$14.50</td>
+        <td>
+          <a href="javascript:alert('5');">Edit</a> |
+          <a href="javascript:alert('Are You Sure?');">Delete</a>
+        </td>
+      </tr>
+
+      </tbody>
+
+    </table>
+
+</body>
+
+</html>
