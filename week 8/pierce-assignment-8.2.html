@@ -1,35 +1,61 @@
 <html lang="en">
 <!--
   ============================================
-  ; Title:
-  ; Author: Kimberly Pierce
+  ; Title: Assignment 8.2
+  ; Author: Kimberly Pierce/Professor Krasso
   ; Date:   27 January 2020
   ; Modified By: Kimberly Pierce
-  ; Description:
+  ; Description: Dynamic HTML
   ;===========================================
  -->
 <head>
-    <title></title>
+    <title>Assignment 8.2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body{
-            font-family: sans-serif;
+        .fruits{
+          margin: 0 auto;
+          width: 80%;
+          font-family: Roboto;
+          font-weight: : 300, 400, 500;
+          padding-top: 20px;
+        }
+        header{
+          background-color: purple;
+          height: 50px;
+          width: 80%;
+          margin: 0 auto;
         }
     </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../site.css">
-    <!--
-    Title:
-    Author: Kimberly Pierce
-    Date:
-    Modified By:
-    Description:
-    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 
 <body>
 
+  <header></header>
+  <div class="fruits"></div>
+
+<script>
+  var fruits=[
+    'Banana',
+    'Apple',
+    'Orange',
+    'Mango',
+    'Peach'
+  ];
+
+var out = "<h2>Fruits</h2><ul>";
+
+for (var x = 0; x < fruits.length; x++) {
+  out+= "<li>" + fruits[x] + "</li>";
+}
+out += "<ul>";
+
+document.querySelector('.fruits').innerHTML = out;
+</script>
 
 
 
