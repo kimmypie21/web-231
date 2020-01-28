@@ -36,9 +36,11 @@
 <body>
 
   <header></header>
+  <!--div to hold ul-->
   <div class="fruits"></div>
 
 <script>
+  //array for ul
   var fruits=[
     'Banana',
     'Apple',
@@ -48,12 +50,12 @@
   ];
 
 var out = "<h2>Fruits</h2><ul>";
-
+//iterate over the array
 for (var x = 0; x < fruits.length; x++) {
   out+= "<li>" + fruits[x] + "</li>";
 }
 out += "<ul>";
-
+//output
 document.querySelector('.fruits').innerHTML = out;
 </script>
 
