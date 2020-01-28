@@ -1,37 +1,125 @@
 <html lang="en">
 <!--
   ============================================
-  ; Title:
+  ; Title: Discussion 8.1
   ; Author: Kimberly Pierce
   ; Date:   27 January 2020
   ; Modified By: Kimberly Pierce
-  ; Description:
+  ; Description: jQuery code with 2 errors
   ;===========================================
  -->
 <head>
-    <title></title>
+    <title>Discussion 8.1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body{
-            font-family: sans-serif;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../site.css">
-    <!--
-    Title:
-    Author: Kimberly Pierce
-    Date:
-    Modified By:
-    Description:
-    -->
+    <!--Styles for body and div-->
+    <style>
+      body{
+        background-color: pink;
+        font-family: sans-serif;
+      }
+      .newClass{
+        width: 50%;
+        margin: 0 auto;
+      }
+      .newClass p{
+        padding: 2%;
+      }
+    </style>
 </head>
 
-
 <body>
+  <!--jQuery to add css styles to newClass-->
+  <script>
+    $(function(){
+      var $color = $('.newClass p')
+      $color.css('background-color', 'white')
+
+      var $text = $('.newClass h1')
+      $text.css('font-family', 'fantasy')
+
+    //function to change paragraph color on click
+      $('.newClass p').click(function(){
+        $(this).css('background-color', '#E6E6FA' );
+      })
+    //function to change paragraph color on double click
+      $('.newClass p').dblclick(function(){
+        $(this).css('background-color', '#98FB98');
+      })
+    });
+    </script>
 
 
+<div class="newClass">
 
+  <h1>Lorem ipsum</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Duis nec dapibus arcu. Praesent sed felis rutrum, fermentum sapien et, eleifend orci.
+    Phasellus vitae fermentum nunc. Quisque tincidunt, enim eget volutpat tempus, mauris
+    sem pretium mauris, non elementum justo odio sed arcu. Integer odio magna, pharetra id
+    risus in, ultrices consequat lectus. Mauris in enim eu purus condimentum mattis vitae
+    nec risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis magna
+    sed mollis suscipit. Nulla aliquam dolor sodales, auctor erat sed, consectetur urna.
+    Integer metus diam, semper sed libero in, maximus mattis urna. Donec commodo odio id
+    vestibulum malesuada. Sed in ultricies neque. Aliquam euismod, leo in ultrices bibendum,
+    sapien felis fermentum velit, vel ultricies sapien arcu eu augue. Ut placerat, velit a
+    porttitor maximus, urna lorem mollis sem, finibus posuere eros sapien non diam. Aenean
+    aliquam ultrices porttitor.
+  </p>
+
+  <h1>Dolor sit amet</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Duis nec dapibus arcu. Praesent sed felis rutrum, fermentum sapien et, eleifend orci.
+    Phasellus vitae fermentum nunc. Quisque tincidunt, enim eget volutpat tempus, mauris
+    sem pretium mauris, non elementum justo odio sed arcu. Integer odio magna, pharetra id
+    risus in, ultrices consequat lectus. Mauris in enim eu purus condimentum mattis vitae
+    nec risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis magna
+    sed mollis suscipit. Nulla aliquam dolor sodales, auctor erat sed, consectetur urna.
+    Integer metus diam, semper sed libero in, maximus mattis urna. Donec commodo odio id
+    vestibulum malesuada. Sed in ultricies neque. Aliquam euismod, leo in ultrices bibendum,
+    sapien felis fermentum velit, vel ultricies sapien arcu eu augue. Ut placerat, velit a
+    porttitor maximus, urna lorem mollis sem, finibus posuere eros sapien non diam. Aenean
+    aliquam ultrices porttitor.
+  </p>
+
+  <h1>Consectetur adipiscing elit</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Duis nec dapibus arcu. Praesent sed felis rutrum, fermentum sapien et, eleifend orci.
+    Phasellus vitae fermentum nunc. Quisque tincidunt, enim eget volutpat tempus, mauris
+    sem pretium mauris, non elementum justo odio sed arcu. Integer odio magna, pharetra id
+    risus in, ultrices consequat lectus. Mauris in enim eu purus condimentum mattis vitae
+    nec risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis magna
+    sed mollis suscipit. Nulla aliquam dolor sodales, auctor erat sed, consectetur urna.
+    Integer metus diam, semper sed libero in, maximus mattis urna. Donec commodo odio id
+    vestibulum malesuada. Sed in ultricies neque. Aliquam euismod, leo in ultrices bibendum,
+    sapien felis fermentum velit, vel ultricies sapien arcu eu augue. Ut placerat, velit a
+    porttitor maximus, urna lorem mollis sem, finibus posuere eros sapien non diam. Aenean
+    aliquam ultrices porttitor.
+  </p>
+
+  <h1>Duis nec dapibus arcu</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Duis nec dapibus arcu. Praesent sed felis rutrum, fermentum sapien et, eleifend orci.
+    Phasellus vitae fermentum nunc. Quisque tincidunt, enim eget volutpat tempus, mauris
+    sem pretium mauris, non elementum justo odio sed arcu. Integer odio magna, pharetra id
+    risus in, ultrices consequat lectus. Mauris in enim eu purus condimentum mattis vitae
+    nec risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sagittis magna
+    sed mollis suscipit. Nulla aliquam dolor sodales, auctor erat sed, consectetur urna.
+    Integer metus diam, semper sed libero in, maximus mattis urna. Donec commodo odio id
+    vestibulum malesuada. Sed in ultricies neque. Aliquam euismod, leo in ultrices bibendum,
+    sapien felis fermentum velit, vel ultricies sapien arcu eu augue. Ut placerat, velit a
+    porttitor maximus, urna lorem mollis sem, finibus posuere eros sapien non diam. Aenean
+    aliquam ultrices porttitor.
+  </p>
+
+
+</div>
 
 
 
