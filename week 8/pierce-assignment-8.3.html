@@ -39,9 +39,10 @@
 
 
 <body>
-
+<!--place  holder for top bar-->
 <header></header>
 
+<!--div for margin styles-->
 <div id="wrapper">
 <h1>This is a Paragraph</h1>
 <p id="paragraph">
@@ -59,6 +60,7 @@ Vestibulum vel nibh sit amet urna ultricies interdum. Fusce pulvinar
 tincidunt dolor, a faucibus orci sagittis et. Proin vitae urna eget turpis vehicula rhoncus.
 </p>
 
+<!--button to toggle paragraph visibility-->
 <button id="toggle">Toggle</button>
 <br>
 <br>
@@ -100,25 +102,19 @@ tincidunt dolor, a faucibus orci sagittis et. Proin vitae urna eget turpis vehic
 </div>
 
 <script>
+  //jQuery function
   $(function(){
-
+    //function to toggle paragraph visibility
     $('#toggle').click(function(){
       $('#paragraph').toggle()
     });
-
+    //function to create click event to show alert when clicking I.D
     $('.alert').click(function(event){
       var fruitId = $(this).text();
       var fruitType = $(this).closest('td').next().text();
       alert('fruitId: '+ fruitId + ' '+ 'fruitType: '+ fruitType);
     });
-
-
-
-
   });
-
-
-
 </script>
 
 
