@@ -1,39 +1,125 @@
+<!DOCTYPE html>
+
 <html lang="en">
 <!--
   ============================================
-  ; Title:
-  ; Author: Kimberly Pierce
+  ; Title:Assignment 8.3
+  ; Author: Kimberly Pierce/Professor Krasso
   ; Date:   27 January 2020
   ; Modified By: Kimberly Pierce
-  ; Description:
+  ; Description:jQuery
   ;===========================================
  -->
 
 <head>
-    <title></title>
+    <title>Assignment 8.3</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
-            font-family: sans-serif;
+          font-family: Roboto;
+          font-weight: : 300, 400, 500;
+        }
+        header{
+          background-color: blueviolet;
+          height: 80px;
+        }
+        tr:nth-child(odd){
+          background-color: burlywood;
+        }
+        wrapper{
+          margin-top:20px;
+          margin-left: 20px
         }
     </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../site.css">
-    <!--
-    Title:
-    Author: Kimberly Pierce
-    Date:
-    Modified By:
-    Description:
-    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 
 <body>
 
+<header></header>
+
+<div id="wrapper">
+<h1>This is a Paragraph</h1>
+<p id="paragraph">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent convallis urna felis, vitae ornare erat accumsan eu.
+In nisl mi, posuere quis nisi id, fringilla posuere elit.
+Ut dapibus rutrum dignissim. Maecenas eu ornare lorem. Sed vitae
+interdum nibh, nec accumsan risus. Mauris ornare massa tincidunt,
+sagittis nibh nec, interdum tortor. Vestibulum pellentesque sagittis
+purus, quis rhoncus dolor dignissim nec. Aenean hendrerit condimentum
+tortor, et ornare erat sodales ut. Ut nec sagittis odio. Nulla tempor
+condimentum finibus. Suspendisse posuere leo magna, ac fermentum magna
+placerat sit amet. Vestibulum interdum mi elementum sem auctor commodo.
+Vestibulum vel nibh sit amet urna ultricies interdum. Fusce pulvinar
+tincidunt dolor, a faucibus orci sagittis et. Proin vitae urna eget turpis vehicula rhoncus.
+</p>
+
+<button id="toggle">Toggle</button>
+<br>
+<br>
+
+<table>
+
+  <tr>
+    <th>I.D</th>
+    <th>Type</th>
+  </tr>
+
+  <tr>
+    <td><a href="#" class="alert">123</a></td>
+    <td>Banana</td>
+  </tr>
+
+  <tr>
+    <td> <a href="#" class="alert">456</a></td>
+    <td>Apple</td>
+  </tr>
+
+  <tr>
+    <td> <a href="#" class="alert">789</a></td>
+    <td>Pear</td>
+  </tr>
+
+  <tr>
+    <td> <a href="#" class="alert">101</a></td>
+    <td>Mango</td>
+  </tr>
+
+  <tr>
+    <td> <a href="#" class = "alert">112</a></td>
+    <td>Orange</td>
+  </tr>
+
+</table>
+
+</div>
+
+<script>
+  $(function(){
+
+    $('#toggle').click(function(){
+      $('#paragraph').toggle()
+    });
+
+    $('.alert').click(function(event){
+      var fruitId = $(this).text();
+      var fruitType = $(this).closest('td').next().text();
+      alert('fruitId: '+ fruitId + ' '+ 'fruitType: '+ fruitType);
+    });
 
 
 
+
+  });
+
+
+
+</script>
 
 
 </body>
