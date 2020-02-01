@@ -1,0 +1,62 @@
+<!-- /*
+;============================================
+; Title:  week 8: Discussion 8.1
+; Author: Professor Krasso
+; Modified by: Kimberly Pierce
+; Date:   26 January 2020
+; Description: Demonstrates the use of jQuery, with two ("2") errors
+;===========================================
+*/
+/*
+; Expected output:
+; a table with foods
+; selecting an item will display its deets
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BU homework</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../site.css">
+</head>
+
+<body>
+  <p>Hello, BU student!</p>
+  <br />
+  <table>
+    <tr>
+      <td><a href="#" class="foodId">1</a></td>
+      <td>Steak</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="foodId">2</a></td>
+      <td>Hamburgers</td>
+    </tr>
+    <tr>
+      <td><a href="#" class="foodId">3</a></td>
+      <td>Turkey Chili</td>
+    </tr>
+  </table>
+
+  <script>
+    $(function () { //corrected spelling error in word function KMP
+      $("p").click(function () {
+        $(this).css("background-color", "red");
+        $(this).css("color", "white");
+      });
+
+      $(".foodId").click(function (event){ //added missing opening curly brace KMP
+        event.preventDefault();
+        var foodId = $(this).text();
+        var foodType = $(this).closest("td").next().text();
+        alert("{food_ID: " + foodId + ", food_type: " + foodType + "}");
+      });
+    });
+
+  </script>
+</body>
+
+</html>
