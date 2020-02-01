@@ -25,15 +25,21 @@
 
 <body>
 
+<div id="emps"></div>
+
+
+
 <script>
 
+//create a JavaScript constructor employee object with an id, firstName, lastName, and title properties 7.2
 function Employee(id, firstName, lastName, title){
-    this.firstName = firstName
-    this.lastName = lastName
-    this.id = id
-    this.title = title
+  this.id = id
+  this.firstName = firstName
+  this.lastName = lastName
+  this.title = title
   }
 
+  //Create and populate an array of five (5) employee objects. 7.2
   var employees = [
     new Employee (1 ,  'Kimberly ',  'Pierce ', 'Angry Little Munchkin'),
     new Employee ( 2 ,  'Alyssa ',  'LeGrande ',  'Sassy Pants'),
@@ -42,16 +48,53 @@ function Employee(id, firstName, lastName, title){
     new Employee ( 5, 'Christy',  'Schneider',  'The Mom')
   ]
 
+  //Create a getEmployee() function that accepts an id argument, iterates over the employee's array, and outputs the matched employee record using a JavaScript alert box.
   function getEmployees (id){
-    for (var i = 0; i < employees.length; i++) {
-      alert ('The Employee I.d is ' + Employee[id])
+    for (var x = 0; x < employees.length; x++) {
+      alert ('The Employee I.d is ' + employees[x].id)
     };
   };
 
-  getEmployees(employees.id);
+  //Create a string variable named "output" and build an HTML table.
+  var output = document.querySelector("#emps").innerHTML =
+      "<h1>Employees</h1>"+
+      "<table>" +
+      "<thead>" +
+      "<tr>" +
+      "<th>I.D</th>" +
+      "<th>First Name</th>" +
+      "<th>Last Name</th>" +
+      "<th>Title</th>" +
+      "</tr>" +
+      "</thead>" +
+      "<tbody>" +
+      "<tr><td></td></tr>"
+      "</tbody>" +
+    "</table>"
 
 
+    $(function () {
 
+
+      //Register an onClick event for $("table tr") and call the find('td:first').html() function. 7.4
+      $("table tr").click(function () {
+        alert ('The Employee I.d is ' + employees.id)
+      });
+
+
+    });
+
+    var out = "<h2>Employees</h2><table>";
+    //Iterate over the employee's array and append each employee property using the <td> td> tag.  8.2
+    for (var x = 0; x < employees.length; x++) {
+      out+= "<td>" + employees[x] + "</td>";
+    }
+    out += "<table>";
+    //Assign the output string to the "emps" through the innerHTML function.
+    document.getElementById('#emps').innerHTML = out;
+
+    //Using the getEmployee() function find the selected employee object and output the results.
+    getEmployee(employees.id);
 
 </script>
 
